@@ -34,3 +34,15 @@ variable "ec2_specs" {
   description = "Specifications for the EC2 instance"
   type        = map(string)
 }
+
+variable "access_key" {
+  description = "AWS access key"
+  type        = string
+  sensitive   = true
+}
+
+variable "secret_key" {
+  description = "AWS secret key"
+  type        = string
+  sensitive   = true
+}
